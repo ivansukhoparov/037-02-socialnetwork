@@ -1,45 +1,21 @@
 import s from "./page.module.css";
+import {Header} from "@/app/components/Header/Header";
+import {Navbar} from "@/app/components/Navbar/Navbar";
+import {Profile} from "@/app/components/Profile/Profile";
 
 export default function Home() {
   return (
       <div className={s.appWrapper}>
-          <header className={s.header}>
-              <p> Next Gen Social Network</p>
-          </header>
-          <nav className={s.nav}>
-              <ul>
-                  <li> Profiles</li>
-                  <li> Messages</li>
-                  <li> News</li>
-                  <li> Music</li>
-                  <li> Settings</li>
-              </ul>
-          </nav>
-          <div className={s.content}>
-              <div className={s.contentHeader}>
-                  <img src="/profile.png" alt="profile"/>
-              </div>
-              <div>
-                  ava + description
-              </div>
-              <div >
-                  <h2>My posts</h2>
-                  <div> New post</div>
-                  <ul>
-                      <li>My post 1</li>
-                      <li>My post 2</li>
-                  </ul>
-
-              </div>
-
-          </div>
+          <Header/>
+          <Navbar/>
+          <Profile/>
       </div>
   );
 }
 
 
 // import Image from "next/image";
-// import styles from "./page.module.css";
+// import styles from "./Header.module.css";
 //
 // export default function Home() {
 //   return (

@@ -1,0 +1,12 @@
+.content {
+    grid-area: c;
+    background-color: darkgrey;
+}
+
+.contentHeader{
+
+}
+
+.contentHeader img{
+width: 100%;
+}

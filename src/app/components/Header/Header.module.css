@@ -1,0 +1,9 @@
+.header {
+    grid-area: h;
+    background-color: aqua;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
