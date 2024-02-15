@@ -1,11 +1,11 @@
 import s from "./Post.module.css";
 
-export const Post = () => {
+export const Post = (props: any) => {
     return (
             <div className={s.item}>
                 <img src="/avator.png"/>
-                My post 1
-                <span> likes</span>
+                <span>{props.message}</span>
+                <span> {props.likesCount} likes</span>
             </div>
 );
 }
